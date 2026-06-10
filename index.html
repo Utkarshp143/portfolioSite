@@ -1,354 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Utkarsh Pandey | Technical Lead - Java Backend Engineer</title>
-  <meta name="description" content="Utkarsh Pandey - Technical Lead, Java Backend Engineer. Spring Boot, Microservices, Kafka, MongoDB, SQL, Monitoring and Production systems." />
+  <title>Utkarsh Pandey | Java Backend Engineer</title>
+  <meta name="description" content="Utkarsh Pandey - Technical Lead / Java Backend Engineer. Spring Boot, Microservices, Kafka, MongoDB, SQL, Monitoring." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles.css?v=1" />
+  <link rel="stylesheet" href="./styles.css?v=200" />
 </head>
 
 <body>
-  <!-- NAV -->
+  <!-- Top Nav like Mukul -->
   <header class="topbar" id="home">
     <div class="container nav">
-      <a class="logo" href="#home" aria-label="Go to home">
-        <span class="logoMark">UP</span>
-      </a>
+      <div class="brandName">Utkarsh Pandey</div>
 
-      <nav class="navLinks" aria-label="Primary navigation">
+      <nav class="navLinks">
         <a href="#about">About</a>
-        <a href="#journey">Journey</a>
         <a href="#projects">Projects</a>
-        <a href="#contact" class="pill">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
 
+      <!-- Mobile -->
       <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+    <div class="mobileMenu" id="mobileMenu">
       <a href="#about">About</a>
-      <a href="#journey">Journey</a>
       <a href="#projects">Projects</a>
-      <a href="#contact" class="pill">Contact</a>
+      <a href="#contact">Contact</a>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
+    <!-- smoky background layer -->
+    <div class="heroSmoke" aria-hidden="true"></div>
+
     <div class="container heroGrid">
       <div class="heroLeft reveal">
-        <p class="eyebrow">Technical Lead | Java Backend Engineer</p>
-
-        <h1 class="heroTitle">
-          Hello, I'm
-          <span class="gradName">Utkarsh Pandey</span>
+        <h1 class="heroHello">
+          <span class="helloBlue">Hello,</span>
+          <span class="helloGreen"> I'm</span>
         </h1>
 
-        <p class="heroRole" id="typingRole" data-roles="Java Backend Engineer,Technical Lead,Spring Boot • Microservices • Kafka">
-          Java Backend Engineer
+        <h2 class="heroName">
+          Utkarsh Pandey
+        </h2>
+
+        <p class="heroPara">
+          I'm a <span class="hl blue">Java Backend Engineer</span> specializing in building robust
+          <span class="hl green">server-side applications</span> and <span class="hl red">APIs</span>.
+          Proficient in <span class="hl yellow">Spring Boot</span>, <span class="hl cyan">Microservices</span>,
+          <span class="hl purple">Kafka</span>, <span class="hl teal">MongoDB</span>, and <span class="hl violet">SQL</span>.
+          I focus on scalable <span class="hl orange">backend solutions</span>, monitoring/logging, and production reliability.
         </p>
 
-        <p class="heroDesc">
-          I build reliable <span class="hl blue">server-side applications</span> and
-          <span class="hl red">REST APIs</span> using
-          <span class="hl green">Java, Spring Boot, and Microservices</span>.
-          Experienced in <span class="hl yellow">Kafka</span>,
-          <span class="hl cyan">MongoDB</span>, <span class="hl purple">SQL</span>,
-          monitoring/logging systems, and production-grade debugging for enterprise platforms.
-        </p>
-
-        <div class="heroCtas">
+        <div class="heroBtns">
           <a class="btn primary" href="mailto:Utkarshp10@outlook.com">Hire Me</a>
-          <a class="btn ghost" href="./Utkarsh_Pandey_FAANG_Template_Resume.docx" download>Download CV</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/utkarsh-pandey-380830154/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn ghost" href="https://github.com/utkarshp143" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn outline" href="./Utkarsh_Pandey_FAANG_Template_Resume.docx" download>Download CV</a>
         </div>
       </div>
 
+      <!-- Right Illustration placeholder (add image later if you want) -->
       <div class="heroRight reveal">
-        <div class="glow glowA"></div>
-        <div class="glow glowB"></div>
+        <div class="avatarWrap">
+          <div class="avatarGlow"></div>
 
-        <div class="avatarCard">
-          <div class="avatar">
-            <!-- Inline SVG placeholder (no assets required) -->
-            <svg viewBox="0 0 400 400" role="img" aria-label="Avatar illustration">
-              <defs>
-                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#00d4ff"/>
-                  <stop offset="1" stop-color="#00ff99"/>
-                </linearGradient>
-                <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
-                  <feGaussianBlur stdDeviation="12" result="blur"/>
-                  <feMerge>
-                    <feMergeNode in="blur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                  </feMerge>
-                </filter>
-              </defs>
-
-              <rect x="20" y="20" width="360" height="360" rx="36" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.10)"/>
-              <circle cx="200" cy="165" r="90" fill="url(#g1)" filter="url(#softGlow)"/>
-              <text x="200" y="190" text-anchor="middle" font-size="64" font-family="Space Grotesk, Manrope, sans-serif" font-weight="900" fill="#001014">UP</text>
-              <rect x="90" y="275" width="220" height="14" rx="7" fill="rgba(255,255,255,0.14)"/>
-              <rect x="120" y="300" width="160" height="10" rx="5" fill="rgba(255,255,255,0.10)"/>
-            </svg>
+          <!-- Placeholder avatar card (no assets needed) -->
+          <div class="avatarCard">
+            <div class="avatarCircle">UP</div>
+            <div class="avatarLabel">Java Backend Engineer</div>
           </div>
 
-          <h3>Enterprise Java Backend</h3>
-          <p>Spring Boot • Kafka • Microservices • Monitoring</p>
+          <!-- If later you want to use an image, replace the avatarCard with:
+          <img class="heroImg" src="./profile.png" alt="Utkarsh Pandey" />
+          -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT / SKILLS + EDUCATION -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="sectionHead reveal">
-        <h2>Skills</h2>
-        <p class="sub">
-          Tools and technologies I use to ship scalable backend systems.
-        </p>
-      </div>
+  <!-- Minimal sections so nav works -->
+  <main class="container">
+    <section id="about" class="section">
+      <h3 class="secTitle">About</h3>
+      <p class="secText">
+        Technical Lead with 6 years of overall experience delivering reliable Java/Spring Boot backend systems.
+        I’ve worked on ISRO delivery, monitoring/logging platforms, telecom integrations, Kafka pipelines, and production support.
+      </p>
+    </section>
 
-      <div class="skillsGrid reveal">
-        <div class="skillCol">
-          <h3>Backend</h3>
-          <ul>
-            <li>Java 8/11/17</li>
-            <li>Spring Boot</li>
-            <li>Microservices</li>
-            <li>REST APIs</li>
-            <li>JUnit</li>
-            <li>Spring Security</li>
-          </ul>
-        </div>
+    <section id="projects" class="section">
+      <h3 class="secTitle">Projects</h3>
+      <p class="secText">
+        ISRO LPSC/URSC Modules • Syslog Monitoring Tool • BNG CUPS Monitoring • DHCP Automation (PGCIL) • Nokia Alarm Adapter (Kafka) • Nokia Log Manager
+      </p>
+    </section>
 
-        <div class="skillCol">
-          <h3>Messaging</h3>
-          <ul>
-            <li>Kafka</li>
-            <li>RabbitMQ</li>
-            <li>Event Processing</li>
-            <li>Log Pipelines</li>
-          </ul>
-        </div>
+    <section id="contact" class="section">
+      <h3 class="secTitle">Contact</h3>
+      <p class="secText">
+        Email: <a class="link" href="mailto:Utkarshp10@outlook.com">Utkarshp10@outlook.com</a> •
+        LinkedIn: <a class="link" href="https://www.linkedin.com/in/utkarsh-pandey-380830154/" target="_blank" rel="noreferrer">Profile</a>
+      </p>
+    </section>
+  </main>
 
-        <div class="skillCol">
-          <h3>Data + Ops</h3>
-          <ul>
-            <li>SQL / MySQL</li>
-            <li>MongoDB</li>
-            <li>Linux</li>
-            <li>Docker</li>
-            <li>Git / JIRA</li>
-            <li>Production Support</li>
-          </ul>
-        </div>
+  <footer class="footer">
+    © <span id="year"></span> Utkarsh Pandey
+  </footer>
 
-        <div class="skillCol edu">
-          <h3>Education</h3>
-          <ul>
-            <li><b>B.Tech</b> (2019)</li>
-            <li><b>MCA</b> (Distance, 2022)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="statsRow reveal">
-        <div class="stat">
-          <div class="statNum">8+</div>
-          <div class="statLabel">Projects</div>
-        </div>
-        <div class="stat">
-          <div class="statNum">6+</div>
-          <div class="statLabel">Years</div>
-        </div>
-        <div class="stat">
-          <div class="statNum">2</div>
-          <div class="statLabel">ISRO Programs</div>
-        </div>
-        <div class="stat">
-          <div class="statNum">Kafka</div>
-          <div class="statLabel">Event Systems</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- JOURNEY / TIMELINE -->
-  <section class="section" id="journey">
-    <div class="container">
-      <div class="sectionHead center reveal">
-        <h2>Professional Journey</h2>
-        <p class="sub">Roles and ownership across enterprise delivery.</p>
-      </div>
-
-      <div class="timeline reveal">
-        <div class="tItem">
-          <div class="tLeft">
-            <div class="tDate">May 2023 – Present</div>
-            <div class="tMeta">Full Time</div>
-            <div class="tCompany">Advantal Technologies</div>
-          </div>
-
-          <div class="tMid">
-            <div class="tDot">AT</div>
-            <div class="tLine"></div>
-          </div>
-
-          <div class="tRight">
-            <h3>Technical Lead</h3>
-            <p class="tDesc">
-              Led backend delivery for ISRO workflows, telecom monitoring and logging platforms.
-            </p>
-            <ul>
-              <li>Owned API design, validations, secure integrations and stable releases for ISRO LPSC workflows.</li>
-              <li>Delivered ISRO URSC monitoring/reporting modules with maintainability focus.</li>
-              <li>Built/Enhanced Syslog & BNG CUPS monitoring tools for network activity visibility.</li>
-              <li>Worked on DHCP automation (PGCIL), Nokia Alarm Adapter (Kafka), and Nokia Log Manager.</li>
-              <li>Mentored team members, reviewed code, and drove debugging/testing practices.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tItem">
-          <div class="tLeft">
-            <div class="tDate">Aug 2020 – May 2023</div>
-            <div class="tMeta">Full Time</div>
-            <div class="tCompany">Infosys Limited</div>
-          </div>
-
-          <div class="tMid">
-            <div class="tDot">IN</div>
-            <div class="tLine"></div>
-          </div>
-
-          <div class="tRight">
-            <h3>Systems Engineer</h3>
-            <p class="tDesc">
-              Focused on defect fixes, testing and stable enterprise delivery.
-            </p>
-            <ul>
-              <li>Resolved defects via code fixes and practical workarounds.</li>
-              <li>Executed unit + integration testing to support stable releases.</li>
-              <li>Collaborated across teams to improve software-hardware interface workflows.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="sectionHead center reveal">
-        <h2>Projects</h2>
-        <p class="sub">Highlight work across ISRO, telecom monitoring, logging and platforms.</p>
-      </div>
-
-      <div class="projectsGrid reveal">
-        <article class="pCard">
-          <div class="pTag">ISRO</div>
-          <h3>ISRO LPSC Recruitment System</h3>
-          <p>Backend workflows, validations, secure API integrations and stable release support.</p>
-          <div class="pStack"><span>Java</span><span>Spring Boot</span><span>REST</span><span>SQL</span></div>
-        </article>
-
-        <article class="pCard">
-          <div class="pTag">ISRO</div>
-          <h3>ISRO URSC Monitoring Modules</h3>
-          <p>Monitoring, reporting and operational modules with maintainable backend delivery.</p>
-          <div class="pStack"><span>Spring Boot</span><span>Monitoring</span><span>Reporting</span></div>
-        </article>
-
-        <article class="pCard">
-          <div class="pTag">Logging</div>
-          <h3>SysLog Monitoring Tool</h3>
-          <p>Log ingestion, parsing, retention, dashboards and exports (PDF/Excel) for network activity.</p>
-          <div class="pStack"><span>Java</span><span>MongoDB</span><span>Syslog</span></div>
-        </article>
-
-        <article class="pCard">
-          <div class="pTag">Telecom</div>
-          <h3>BNG CUPS Monitoring Tool</h3>
-          <p>Network monitoring, CPU/Memory/Subscriber stats, SOAP/XML integrations and reporting.</p>
-          <div class="pStack"><span>Spring Boot</span><span>MongoDB</span><span>SOAP</span></div>
-        </article>
-
-        <article class="pCard">
-          <div class="pTag">PGCIL</div>
-          <h3>DHCP Automation System</h3>
-          <p>Provisioning + IP lifecycle workflows and automation for network operations.</p>
-          <div class="pStack"><span>Java</span><span>Spring Boot</span><span>Automation</span></div>
-        </article>
-
-        <article class="pCard">
-          <div class="pTag">Kafka</div>
-          <h3>Nokia Alarm Adapter</h3>
-          <p>Kafka-based alarm ingestion, normalization and routing for telecom event processing.</p>
-          <div class="pStack"><span>Kafka</span><span>Java</span><span>Spring Boot</span></div>
-        </article>
-
-        <article class="pCard">
-          <div class="pTag">Logging</div>
-          <h3>Nokia Log Manager</h3>
-          <p>Centralized log management for ingestion, filtering, analysis and troubleshooting.</p>
-          <div class="pStack"><span>Java</span><span>Spring</span><span>Logs</span></div>
-        </article>
-
-        <article class="pCard">
-          <div class="pTag">Crio</div>
-          <h3>QMoney</h3>
-          <p>Portfolio analyzer for recommendation workflows and backend data processing.</p>
-          <div class="pStack"><span>Java</span><span>REST</span><span>Collections</span></div>
-          <a class="pLink" href="https://www.crio.do/learn/portfolio/utkarshp143/" target="_blank" rel="noreferrer">View</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="contactCard reveal">
-        <h2>Contact</h2>
-        <p class="sub">
-          If you are hiring for Java Backend / Spring Boot / Microservices / Kafka roles, let’s connect.
-        </p>
-
-        <div class="contactRow">
-          <a class="btn primary" href="mailto:Utkarshp10@outlook.com">Utkarshp10@outlook.com</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/utkarsh-pandey-380830154/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn ghost" href="https://github.com/utkarshp143" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-
-        <form class="miniForm" id="miniForm">
-          <input type="text" id="name" placeholder="Your name" required />
-          <input type="email" id="email" placeholder="Your email" required />
-          <textarea id="message" placeholder="Message" rows="4" required></textarea>
-          <button type="submit" class="btn primary">Send</button>
-          <p class="formNote" id="formNote"></p>
-        </form>
-      </div>
-
-      <footer class="footer">
-        <span>© <span id="year"></span> Utkarsh Pandey</span>
-      </footer>
-    </div>
-  </section>
-
-  <script src="./script.js?v=1"></script>
+  <script src="./script.js?v=200"></script>
 </body>
 </html>
