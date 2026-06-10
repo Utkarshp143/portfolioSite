@@ -1,3 +1,8 @@
+html,
+body{
+    overflow-x:hidden;
+}
+
 .hero-section{
     background:#000;
     min-height:100vh;
@@ -147,6 +152,7 @@
     position:relative;
     width:500px;
     max-width:100%;
+    height:auto;
     z-index:2;
 }
 
